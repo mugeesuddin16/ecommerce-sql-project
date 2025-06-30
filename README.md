@@ -58,7 +58,7 @@ ecommerce-sql-project/
 
 ---
 
-## 🔍 Key Analyses Performed
+## 🔍 Key Analysis Performed
 
 ### 📊 1. Initial Data Exploration (EDA)
 - Checked date ranges, event types, user IDs, and data quality
