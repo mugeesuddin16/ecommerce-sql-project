@@ -1,7 +1,6 @@
 # 🛒 E-Commerce Sales & Customer Behavior Analysis (SQL Project)
 
-This SQL project analyzes real-world e-commerce behavioral data from an online multi-category store.  
-The dataset includes millions of user interactions such as `view`, `cart`, and `purchase` events.
+This project explores an E-Commerce dataset using advanced SQL queries to extract insights about customer behavior, sales trends, time patterns, and funnel conversion performance. All analysis was performed using **MySQL Workbench**.
 
 ---
 
@@ -10,14 +9,6 @@ The dataset includes millions of user interactions such as `view`, `cart`, and `
 - Source: [Kaggle - E-Commerce Behavior Data](https://www.kaggle.com/datasets/mkechinov/ecommerce-behavior-data-from-multi-category-store)
 - File: `2019-Oct.csv`
 - Size: 2M+ rows, includes timestamp, user_id, product, category, and event type
-
----
-
-## 🔧 Tools Used
-
-- MySQL & MySQL Workbench
-- GitHub
-- CSV Data (Excel for pre-checks)
 
 ---
 
@@ -55,18 +46,89 @@ The dataset includes millions of user interactions such as `view`, `cart`, and `
 
 ecommerce-sql-project/
 ├── queries/
-│   ├── eda.sql
-│   ├── customer_behavior.sql
-│   ├── sales_analysis.sql
-│   ├── time_analysis.sql
-│   └── funnel_analysis.sql
+│   ├── 1.INITIAL DATA EXPLORATION (EDA).sql
+│   ├── 2.CUSTOMER BEHAVIOR ANALYSIS.sql
+│   ├── 3.SALES AND PRODUCT ANALYSIS.sql
+│   ├── 4.TIME ANALYSIS.sql
+│   └── 5.CONVERSION FUNNEL ANALYSIS.sql
 ├── data/
 ├── README.md
 ├── LICENSE
 └── .gitignore
 
-## 🔍 Insights
+---
 
-- View-to-purchase conversion rate ~1.67%
-- Most purchases happen without cart usage
-- Evening hours show the highest purchase activity
+## 🔍 Key Analyses Performed
+
+### 📊 1. Initial Data Exploration (EDA)
+- Checked date ranges, event types, user IDs, and data quality
+- Identified the presence of future-dated rows (e.g., year 2106)
+- Determined active time range in dataset
+
+### 👥 2. Customer Behavior Analysis
+- Tracked repeat users and single-visit users
+- Identified purchase patterns across users
+- Segmented behavior by event types (view, cart, purchase)
+
+### 💸 3. Sales and Product Analysis
+- Found top-selling products
+- Analyzed sales by category and product type
+- Identified products with high cart abandonment
+
+### ⏰ 4. Time-Based Analysis
+- Analyzed sales and activity by hour, day, and month
+- Found peak user activity and conversion hours
+
+### 🔁 5. Funnel Conversion Analysis
+- Calculated view-to-cart, cart-to-purchase, and view-to-purchase rates
+- Visualized drop-offs in the sales funnel
+
+---
+
+## 📈 Insights
+
+- 🔍 Over **1 million views**, but only **~17K purchases**
+- 📉 **View-to-purchase conversion rate:** ~1.67%
+- 🛍️ Majority of purchases **bypassed the cart step**
+- 🕖 Most purchases occurred during **evening hours**
+- 🛒 High cart abandonment rate for certain product types
+  
+---
+
+## 🔧 Tools Used
+
+- **SQL (MySQL Workbench)**
+- Git & GitHub for version control
+- Excel (for initial data checks)
+
+---
+
+## 📁 Dataset Info
+
+- Format: `.csv`
+- Rows: ~1.1 million
+- Fields: `event_time`, `event_type`, `product_id`, `category_id`, `user_id`, etc.
+- Source: Sample E-Commerce behavior data
+
+  ---
+
+## 📜 License
+
+This project is licensed under the [MIT License](LICENSE).
+
+---
+
+## 🙌 Acknowledgements
+
+Thanks to online communities, mentors, and open datasets that support hands-on learning in data analytics.
+
+---
+
+## 💼 About Me
+
+I'm an aspiring **Data Analyst** passionate about turning data into actionable insights.  
+Connect with me on [LinkedIn](https://www.linkedin.com/in/mugeesuddin16) for collaboration, feedback, or opportunities.
+
+---
+
+
